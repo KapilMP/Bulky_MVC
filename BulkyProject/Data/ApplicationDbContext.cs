@@ -13,6 +13,7 @@ namespace BulkyProject.Data
         public DbSet<Category> Categories { get; set; } //creating table in database
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
+            //seed categroy table
             //insert data in database category table
         {
             modelBuilder.Entity<Category>().HasData(
